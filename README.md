@@ -67,3 +67,7 @@ You can use whatever resource you need for this project. You can use the interne
 -   Clean code (indentation, comments, clear variables and functions names)
 
 ## Good luck, and happy coding ✨
+
+I need to work on creating a real thing the same as this. I tried to get the array of couple of quotes and generated it to times. I used the Math.random and Math.floor to get the integer between 0 to 1. I have something in mind but I amnot aware of when we use them and how to use them.
+**This project didn't turn out well to me. I tried many things but I couldn't solve it. Now I assume that I still don't understand what javascript is.** 
+ 
