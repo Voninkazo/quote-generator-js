@@ -20,24 +20,23 @@ let quoteRandom1 = Math.floor(Math.random) * (quote1.length);
 let quoteRandom2 = Math.floor(Math.random) * (quote2.length);
 let quoteRandom3 = Math.floor(Math.random) * (quote3.length);
 
+let string1 = quote1[quoteRandom1];
+let string2 = quote2[quoteRandom2];
+let string3 = quote3[quoteRandom3];
+
 // Here I want to access the final quote
-let finalQuote = `${quote1[quoteRandom1]} + ' ' + ${quote2[quoteRandom2]} + ' ' + ${quote3[quoteRandom3]}` + '.';
+let finalQuote = `${string1} ${string2}  ${string3}`;
 // Console log the final quote 
 console.log(finalQuote);
 
 // Create a prompt for the users to enter the number of quotation they want
-
+let numberOfquote = prompt('Enter your number of quote you want to look at, between 1 to 5:');
 function enterFunction() {
-  let numberOfquote = Number(prompt('Enter your number of quote you want to look at:'));
-  if (numberOfquote >= 1 && numberOfquote <= 5) {
-    console.log(finalQuote[1]);
-  }
-  for (let i = 1; i <= 5; i++) {
-    if (numberOfquote === 1 && numberOfquote <= 5) {
-      console.log(finalQuote);
+  for (let i = 0; i < numberOfquote; i++) {
+    if (numberOfquote >= 1 && numberOfquote <= 5) {
+      console.log(string1);
     } else {
       console.log("choose number between 1 to 5");
     }
   }
-  return enterFunction();
 }
