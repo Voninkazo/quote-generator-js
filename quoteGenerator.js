@@ -3,17 +3,17 @@ const quote1 = [
   'You \'ve gotta dance like there\'s nobody watching.',
   ' You\'re not getting away from me.',
   'Never again.'
-]
+];
 const quote2 = [
   'Be the change that you wish to see in the world.',
   'I envy people that know love.',
   'That have someone who takes them as they are.'
-]
+];
 const quote3 = [
   'No one can make you feel inferior without your consent.',
   'I know that man is capable of great deeds.',
   'But if he isn\'t capable of great emotion, well, he leaves me cold.'
-]
+];
 
 // Generate the array randomly 
 let quoteRandom1 = Math.floor(Math.random) * (quote1.length);
@@ -48,8 +48,8 @@ function enterFunction() {
       let string2 = quote2[randomIndex2];
       let string3 = quote3[randomIndex3];
       console.log(`${string1} ${string2} ${string3}`)
-    };
+    }
   } else {
     return "Choose between 1 to 5";
-  };
+  }
 } enterFunction();
