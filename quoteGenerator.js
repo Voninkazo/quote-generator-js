@@ -53,3 +53,41 @@ function enterFunction() {
     return "Choose between 1 to 5";
   }
 } enterFunction();
+
+// Let's create new arrays and they must be differnet from each other
+let quoteLove = [
+  "We love the things we love for what they are.",
+  "Do not settle for a relationship that won’t let you be yourself.",
+  "Only time can heal your broken heart, just as only time can heal his broken arms and legs."
+];
+
+let quoteInspiration = [
+  "Say yes more than no!",
+  "Why stop dreaming when you are awake?",
+  "The only time you should look back, is to see how far you’ve come."
+];
+
+let loveRandom = Math.floor(Math.random) * (quoteLove.length);
+let inspireRandom = Math.floor(Math.random) * (quoteInspiration.length);
+let str1 = quoteLove[loveRandom];
+let str2 = quoteInspiration[inspireRandom];
+let arr = `${str1} ${str2}`;
+
+function quoteStyle() {
+  let yourQuote =prompt(`What kind of qoute do you want? 'Love' or 'Inspirational'`);
+  let index1 = Math.floor(Math.random() * (quoteLove.length));
+  let index2 = Math.floor(Math.random() * (quoteInspiration.length));
+  let q1 = quoteLove[index1];
+  let q2 = quoteInspiration[index2];
+  console.log(`${q1} ${q2}`);
+
+  for (let i = 0; i < yourQuote; i++) {
+    if (yourQuote === "love" || yourQuote === "Love") {
+      return q1;
+    } else if (yourQuote === "Inspirational" || yourQuote === "inspirational") {
+      return q2;
+    } else {
+      console.log(`Please try again`);
+    }
+  }
+} quoteStyle();
