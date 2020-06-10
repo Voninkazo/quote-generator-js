@@ -68,26 +68,76 @@ let secondLoveQuote = [
   "And that\’s love even if it doesn\’t seem very exciting."
 ];
 
-let thridLoveQuote = [
+let thirdLoveQuote = [
   "Love is a promise.",
   "Love is a souvenir\,once given never forgotten.",
   "Never let it disappear."
 ];
 
-let firstInpiringQuote = [
+let firstHealthQuote = [
   "Say yes more than no!",
   "Why stop dreaming when you are awake?",
   "The only time you should look back, is to see how far you’ve come."
 ];
 
-let secondInspiringQuote = [
+let secondHealthQuote = [
   "Three things in life – your health, your mission, and the people you love.",
   "That\’s it.",
-  "Happiness is the highest form of health." 
+  "Happiness is the highest form of health."
 ];
 
-let thirdInpireQuote = [
+let thirdHealthQuote = [
   "A good laugh and a long sleep are the best cures in the doctor\’s book.",
   "The greatest of follies is to sacrifice health for any other kind of happiness.",
   "What is called genius is the abundance of life and health."
 ];
+
+function generateLoveQuote() {
+  let randomIndex1 = Math.floor(Math.random() * firstLoveQuote.length);
+  let randomIndex2 = Math.floor(Math.random() * secondLoveQuote.length);
+  let randomIndex3 = Math.floor(Math.random() * thirdLoveQuote.length);
+  let string1 = firstLoveQuote[randomIndex1];
+  let string2 = secondLoveQuote[randomIndex2];
+  let string3 = thirdLoveQuote[randomIndex3];
+  let quote1 = `${string1} ${string2} ${string3}`;
+  return quote1;
+} generateLoveQuote();
+
+function generateHealthQuote() {
+  let randomIndex1 = Math.floor(Math.random() * firstHealthQuote.length);
+  let randomIndex2 = Math.floor(Math.random() * secondHealthQuote.length);
+  let randomIndex3 = Math.floor(Math.random() * thirdHealthQuote.length);
+  let string4 = firstHealthQuote[randomIndex1];
+  let string5 = secondHealthQuote[randomIndex2];
+  let string6 = thirdHealthQuote[randomIndex3];
+  let quote2 = ` ${string4} ${string5} ${string6}`;
+  return quote2;
+} generateHealthQuote();
+// let numberOfquote = prompt(`choose between 1 to 5`)
+// if (numberOfquote >= 1 && numberOfquote <= 5) {
+  const choiceQuote = prompt(`Choose between type love and health`);
+  for (let i = 0; i < choiceQuote; i++) {
+    if (choiceQuote === "love") {
+      generateLoveQuote();
+    }
+    if (choiceQuote === "health") {
+      generateHealthQuote();
+    }
+else {
+  while (numberOfquote < 1 || numberOfquote > 5) {
+    let numberOfquote = prompt("How many time do you to want to generate a random quote?");
+    if (numberOfquote >= 1 && numberOfquote <= 5) {
+      const choiceQuote = prompt("Choose between type love and type health");
+      for (let i = 0; i < numberOfquote; i++) {
+        if (choiceQuote === "love") {
+          generateLoveQuote();
+        }
+        if (choiceQuote === "health") {
+          generateHealthQuote();
+        }
+      }
+    }
+  }
+}
+  }
+
