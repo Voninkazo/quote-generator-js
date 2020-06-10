@@ -55,39 +55,39 @@ function enterFunction() {
 } enterFunction();
 
 // Let's create new arrays and they must be differnet from each other
-let quoteLove = [
+let firstLoveQuote = [
   "We love the things we love for what they are.",
   "Do not settle for a relationship that won’t let you be yourself.",
   "Only time can heal your broken heart, just as only time can heal his broken arms and legs."
 ];
 
-let quoteInspiration = [
+let secondLoveQuote = [
+  "Love is absolute loyalty.",
+  "People fade but loyalty never fades.",
+  "You can depend so much on certain people.",
+  "And that\’s love even if it doesn\’t seem very exciting."
+];
+
+let thridLoveQuote = [
+  "Love is a promise.",
+  "Love is a souvenir\,once given never forgotten.",
+  "Never let it disappear."
+];
+
+let firstInpiringQuote = [
   "Say yes more than no!",
   "Why stop dreaming when you are awake?",
   "The only time you should look back, is to see how far you’ve come."
 ];
 
-let loveRandom = Math.floor(Math.random) * (quoteLove.length);
-let inspireRandom = Math.floor(Math.random) * (quoteInspiration.length);
-let str1 = quoteLove[loveRandom];
-let str2 = quoteInspiration[inspireRandom];
-let arr = `${str1} ${str2}`;
+let secondInspiringQuote = [
+  "Three things in life – your health, your mission, and the people you love.",
+  "That\’s it.",
+  "Happiness is the highest form of health." 
+];
 
-function quoteStyle() {
-  let yourQuote =prompt(`What kind of qoute do you want? 'Love' or 'Inspirational'`);
-  let index1 = Math.floor(Math.random() * (quoteLove.length));
-  let index2 = Math.floor(Math.random() * (quoteInspiration.length));
-  let q1 = quoteLove[index1];
-  let q2 = quoteInspiration[index2];
-  console.log(`${q1} ${q2}`);
-
-  for (let i = 0; i < yourQuote; i++) {
-    if (yourQuote === "love" || yourQuote === "Love") {
-      return q1;
-    } else if (yourQuote === "Inspirational" || yourQuote === "inspirational") {
-      return q2;
-    } else {
-      console.log(`Please try again`);
-    }
-  }
-} quoteStyle();
+let thirdInpireQuote = [
+  "A good laugh and a long sleep are the best cures in the doctor\’s book.",
+  "The greatest of follies is to sacrifice health for any other kind of happiness.",
+  "What is called genius is the abundance of life and health."
+];
